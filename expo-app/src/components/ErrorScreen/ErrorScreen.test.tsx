@@ -25,4 +25,15 @@ describe("ErrorScreen", () => {
     );
     expect(toJSON()).toMatchSnapshot();
   });
+
+  it("renders - not isFetching", () => {
+    const { toJSON } = render(
+      <ErrorScreen
+        refetch={() => {}}
+        isFetching={false}
+        error="This is the error"
+      />,
+    );
+    expect(toJSON()).toMatchSnapshot();
+  });
 });

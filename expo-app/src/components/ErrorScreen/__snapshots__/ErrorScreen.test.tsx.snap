@@ -1,0 +1,165 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ErrorScreen renders - isFetching 1`] = `
+<View
+  className="self-stretch flex-1 justify-center items-center px-6"
+  style={
+    {
+      "backgroundColor": "#09090B",
+    }
+  }
+>
+  <View
+    className="items-center"
+  >
+    <Text
+      className="text-2xl font-bold mb-3"
+      style={
+        {
+          "color": "#FFFFFF",
+        }
+      }
+    >
+      Oops! Something went wrong
+    </Text>
+    <Text
+      className="text-center text-base mb-6"
+      style={
+        {
+          "color": "#FFFFFF",
+        }
+      }
+    >
+      This is the error
+    </Text>
+    <View
+      accessibilityState={
+        {
+          "busy": undefined,
+          "checked": undefined,
+          "disabled": true,
+          "expanded": undefined,
+          "selected": undefined,
+        }
+      }
+      accessibilityValue={
+        {
+          "max": undefined,
+          "min": undefined,
+          "now": undefined,
+          "text": undefined,
+        }
+      }
+      accessible={true}
+      collapsable={false}
+      focusable={false}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        {
+          "backgroundColor": "#A3E635",
+          "opacity": 0.6,
+        }
+      }
+    >
+      <Text
+        className=" font-semibold text-center"
+        style={
+          {
+            "color": "#09090B",
+          }
+        }
+      >
+        Retrying...
+      </Text>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`ErrorScreen renders - not isFetching 1`] = `
+<View
+  className="self-stretch flex-1 justify-center items-center px-6"
+  style={
+    {
+      "backgroundColor": "#09090B",
+    }
+  }
+>
+  <View
+    className="items-center"
+  >
+    <Text
+      className="text-2xl font-bold mb-3"
+      style={
+        {
+          "color": "#FFFFFF",
+        }
+      }
+    >
+      Oops! Something went wrong
+    </Text>
+    <Text
+      className="text-center text-base mb-6"
+      style={
+        {
+          "color": "#FFFFFF",
+        }
+      }
+    >
+      This is the error
+    </Text>
+    <View
+      accessibilityState={
+        {
+          "busy": undefined,
+          "checked": undefined,
+          "disabled": false,
+          "expanded": undefined,
+          "selected": undefined,
+        }
+      }
+      accessibilityValue={
+        {
+          "max": undefined,
+          "min": undefined,
+          "now": undefined,
+          "text": undefined,
+        }
+      }
+      accessible={true}
+      collapsable={false}
+      focusable={true}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        {
+          "backgroundColor": "#A3E635",
+          "opacity": 1,
+        }
+      }
+    >
+      <Text
+        className=" font-semibold text-center"
+        style={
+          {
+            "color": "#09090B",
+          }
+        }
+      >
+        Try Again
+      </Text>
+    </View>
+  </View>
+</View>
+`;
