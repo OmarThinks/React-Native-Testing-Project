@@ -2,13 +2,5 @@
 
 # TODO:
 
-- Add Redux ✅
-- Add the theme slice ✅
-- Add tabs ✅
-- Add the settings tab ✅
-- Initialize app, and theme ✅
-- install react query ✅
-- Fix NativeWind
-- At the home page, send a request to the gold api
+- At the home page, send a request to the gold api, and display the result
 - install testing packages
-- Create a simple component
