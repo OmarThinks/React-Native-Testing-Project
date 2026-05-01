@@ -5,10 +5,17 @@
   "scripts": {
     "start": "expo start",
     "reset-project": "node ./scripts/reset-project.js",
-    "android": "expo start --android",
-    "ios": "expo start --ios",
+    "android-expo-go": "expo start --android",
+    "ios": "expo run:ios",
     "web": "expo start --web",
-    "lint": "expo lint"
+    "lint": "expo lint",
+    "prebuildAndroid": "expo prebuild --platform android",
+    "buildAndroidLocally": "eas build --platform android --profile production --local",
+    "buildAndroidLocallyAPK": "eas build --platform android --profile productionApk --local",
+    "clean": "rm -r node_modules android package-lock.json .expo",
+    "prebuild": "npm i && npx expo prebuild --platform android",
+    "prebuildNew": "npm i && npx expo prebuild --platform android --clean",
+    "android": "expo run:android"
   },
   "dependencies": {
     "@react-native-async-storage/async-storage": "2.2.0",
@@ -17,8 +24,8 @@
     "@react-navigation/native": "^7.1.33",
     "@reduxjs/toolkit": "^2.11.2",
     "@tanstack/react-query": "^5.100.6",
-    "babel-preset-expo": "^55.0.18",
-    "expo": "~55.0.18",
+    "babel-preset-expo": "^55.0.19",
+    "expo": "~55.0.19",
     "expo-constants": "~55.0.15",
     "expo-device": "~55.0.15",
     "expo-font": "~55.0.6",
